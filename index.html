@@ -9,53 +9,56 @@
     <h1>Student registration Form</h1>
     <form>
       <label for="RolNum">Roll number.: </label>
-      <input type="text" name="RolNum" size="60" required />
+      <input type="text" name="RollNumber" id="RolNum" size="60" required />
       <br />
       <br />
       <label for="name">Student name :</label>
-      <input type="text" name="name" placeholder="First Name" /> -
-      <input type="text" name="name" placeholder="Last Name" />
+      <input type="text" name="FirstName" id="name" placeholder="First Name" /> -
+      <input type="text" name="LastName" id="name" placeholder="Last Name" />
       <br />
       <br />
       <label for="FN">Father's name :</label>
-      <input type="text" name="FN" size="60" />
+      <input type="text" name="FatherName" id="FN" size="60" />
       <br />
       <br />
+      <label for="Newstyle">Date of Birth:</label>
+  <input type="date" id="Newstyle" name="dob" required> <strong>New Style</strong>
+  <br><br>
       <label for="DofB">Date of birth :</label>
-      <input type="text" name="DofB" placeholder="Day" size="5" /> -
-      <input type="text" name="DofB" placeholder="Month" size="5" /> -
-      <input type="text" name="DofB" placeholder="Year" size="10" />
+      <input type="text" name="Date" id="DofB" placeholder="Day" size="5" /> -
+      <input type="text" name="Date" id="DofB" placeholder="Month" size="5" /> -
+      <input type="text" name="Date" id="DofB" placeholder="Year" size="10" />
       <em>(DD-MM-YYYY)</em>
       <br />
       <br />
       <label for="MobNum">Mobile no :</label>
-      <input type="text" value="+92" name="MobNum" size="3" /> -
-      <input type="text" name="MobNum" size="52" />
+      <input type="tel" value="+92" name="Mobile" id="MobNum" size="3" /> -
+      <input type="tel" name="MobNum" id="MobNum" size="52" />
       <br />
       <br />
       <label for="email">Email id :</label>
-      <input type="email" name="email" size="60" />
+      <input type="email" name="email" id="email" size="60" required />
       <br />
       <br />
       <label for="pas">Password :</label>
-      <input type="password" name="pas" size="60" />
+      <input type="password" name="password" id="pas" size="60" required/>
       <br />
       <br />
       <label for="gender">Gender :</label>
-      <input type="radio" name="gender" value="mle" />Male
-      <input type="radio" name="gender" value="fml" />Female
+      <input type="radio" id="gender" name="gender" value="mle" />Male
+      <input type="radio"id="gender" name="gender" value="fml" />Female
       <br />
       <br />
       <label for="dep">Department :</label>
-      <input type="checkbox" name="dep" value="CSE" />CSE
-      <input type="checkbox" name="dep" value="IT" />IT
-      <input type="checkbox" name="dep" value="ECE" />ECE
-      <input type="checkbox" name="dep" value="Civil" />Civil
-      <input type="checkbox" name="dep" value="Mech" />Mech
+      <input type="checkbox" name="Department" id="dep" value="CSE" />CSE
+      <input type="checkbox" name="Department" id="dep"  value="IT" />IT
+      <input type="checkbox" name="Department" id="dep"  value="ECE" />ECE
+      <input type="checkbox" name="Department" id="dep"  value="Civil" />Civil
+      <input type="checkbox" name="Department" id="dep"  value="Mech" />Mech
       <br />
       <br />
-      <label for="course">Course :</label>
-      <select>
+      <label>Course :</label>
+      <select name="Course">
         <option>----------Select Current Course's----------</option>
         <option>Modren Web & App Development</option>
         <option>Digitel Marckiting</option>
@@ -67,8 +70,8 @@
       <input type="file" name="photo" placeholder="Choose File" />
       <br />
       <br />
-      <label for="city">City :</label>
-      <select>
+      <label>City :</label>
+      <select name="City">
         <option>Select Your City</option>
         <option selected>Karachi</option>
         <option>islamabad</option>
@@ -78,7 +81,7 @@
       <br />
       <br />
       <label for="addr">Address :</label>
-      <textarea rows="5" cols="62"></textarea>
+      <textarea rows="5" cols="62" id="addr"></textarea>
       <br />
       <br />
       <button type="submit">Register</button>
